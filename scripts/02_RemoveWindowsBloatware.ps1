@@ -24,7 +24,6 @@ Get-AppxPackage -AllUsers Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
 Get-AppxPackage -Allusers Microsoft.XboxGamingOverlay | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.BingWeather | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsSoundRecorder | Remove-AppxPackage
-Get-AppxPackage -AllUsers Microsoft.ScreenSketch | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.YourPhone | Remove-AppxPackage
 Get-AppxPackage -AllUsers MSTeams | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.Getstarted | Remove-AppxPackage
@@ -32,10 +31,6 @@ Get-AppxPackage -AllUsers MicrosoftTeams | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MicrosoftJournal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsAlarms | Remove-AppxPackage
-Get-AppxPackage -AllUsers HoloCamera | Remove-AppxPackage
-Get-AppxPackage -AllUsers HoloItemPlayerApp | Remove-AppxPackage
-Get-AppxPackage -AllUsers HoloShell | Remove-AppxPackage
-
 
 ## For my home PCs
 Get-AppxPackage -AllUsers AD2F1837.HPEnhance | Remove-AppxPackage
