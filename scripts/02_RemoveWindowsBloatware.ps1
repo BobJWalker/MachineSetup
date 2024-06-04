@@ -32,6 +32,9 @@ Get-AppxPackage -AllUsers MicrosoftTeams | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MicrosoftJournal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsAlarms | Remove-AppxPackage
+Get-AppxPackage -AllUsers HoloCamera | Remove-AppxPackage
+Get-AppxPackage -AllUsers HoloItemPlayerApp | Remove-AppxPackage
+Get-AppxPackage -AllUsers HoloShell | Remove-AppxPackage
 
 
 ## For my home PCs
@@ -42,6 +45,9 @@ Get-AppxPackage -AllUsers AD2F1837.HPPrinterControl | Remove-AppxPackage
 Get-AppxPackage -AllUsers AD2F1837.HPPrivacySettings | Remove-AppxPackage
 Get-AppxPackage -AllUsers AD2F1837.HPSystemEventUtility | Remove-AppxPackage
 Get-AppxPackage -AllUsers AD2F1837.HPThermalControl | Remove-AppxPackage
+
+## Run this to get a list of all the remaining installed apps for your user
+Get-AppxPackage | Select Name, PackageFullName
 Get-AppxPackage -AllUsers AD2F1837.myHP | Remove-AppxPackage
 Get-AppxPackage -AllUsers AD2F1837.OMENCommandCenter | Remove-AppxPackage
 Get-AppxPackage -AllUsers C27EB4BA.DropboxOEM | Remove-AppxPackage
