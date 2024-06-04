@@ -1,8 +1,10 @@
 ## You must run this an admin
+choco install 1password -y
 choco install 7zip -y
 choco install azure-cli -y
 choco install awscli -y
 choco install beyondcompare -y
+choco install cpu-z -y
 choco install dotnet-6.0-desktopruntime -y
 choco install dotnet-7.0-desktopruntime -y
 choco install dotnet-7.0-sdk -y
@@ -15,6 +17,8 @@ choco install gcloudsdk -y
 choco install git -y
 choco install gitextensions -y
 choco install googledrive -y
+choco install gpu-z -y
+choco install hwmonitor -y
 choco install kubernetes-cli -y
 choco install kubernetes-helm -y
 choco install linqpad7 -y
