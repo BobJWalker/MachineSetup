@@ -26,12 +26,14 @@ Get-AppxPackage -AllUsers Microsoft.XboxGameOverlay | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.BingWeather | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsSoundRecorder | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.YourPhone | Remove-AppxPackage
+Get-AppxPackage -AllUsers MicrosoftWindows.CrossDevice | Remove-AppxPackage
 Get-AppxPackage -AllUsers MSTeams | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.Getstarted | Remove-AppxPackage
 Get-AppxPackage -AllUsers MicrosoftTeams | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MicrosoftJournal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsAlarms | Remove-AppxPackage
+Get-AppxPackage -AllUsers Microsoft.MicrosoftOfficeHub | Remove-AppxPackage
 
 ## For my home PCs
 Get-AppxPackage -AllUsers AD2F1837.HPEnhance | Remove-AppxPackage
