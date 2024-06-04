@@ -1,4 +1,4 @@
-## Remove Windows Bloatware
+## Remove Windows Bloatware - you must run this as an admin
 Get-AppxPackage -AllUsers Clipchamp.Clipchamp | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.BingNews | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage
@@ -21,7 +21,8 @@ Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.XboxIdentityProvider | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.Xbox.TCUI | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
-Get-AppxPackage -Allusers Microsoft.XboxGamingOverlay | Remove-AppxPackage
+Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage
+Get-AppxPackage -AllUsers Microsoft.XboxGameOverlay | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.BingWeather | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsSoundRecorder | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.YourPhone | Remove-AppxPackage
