@@ -26,3 +26,4 @@ choco install sql-server-management-studio -y
 choco install visualstudio2022professional -y
 choco install vlc -y
 choco install vscode -y
+choco install winamp -y
