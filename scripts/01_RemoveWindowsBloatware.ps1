@@ -13,8 +13,6 @@ Get-AppxPackage -AllUsers Microsoft.ZuneMusic | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.ZuneVideo | Remove-AppxPackage
 Get-AppxPackage -AllUsers MicrosoftCorporationII.MicrosoftFamily | Remove-AppxPackage
 Get-AppxPackage -AllUsers MicrosoftCorporationII.QuickAssist | Remove-AppxPackage
-Get-AppxPackage -AllUsers DellInc.DellDigitalDelivery | Remove-AppxPackage
-Get-AppxPackage -AllUsers MPortraitDisplays.DellPremierColor | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.OutlookForWindows | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.GetHelp | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage
@@ -35,14 +33,13 @@ Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsAlarms | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MicrosoftOfficeHub | Remove-AppxPackage
 
+## Remove all the Dell bloatware
+Get-AppxPackage -AllUsers | Where-Object Name -like "Dell*" | Remove-AppxPackage
+
+## Remove all the HP bloatware
+Get-AppxPackage -AllUsers | Where-Object Name -like "HP*" | Remove-AppxPackage
+
 ## For my home PCs
-Get-AppxPackage -AllUsers AD2F1837.HPEnhance | Remove-AppxPackage
-Get-AppxPackage -AllUsers AD2F1837.HPInc.EnergyStar | Remove-AppxPackage
-Get-AppxPackage -AllUsers AD2F1837.HPPCHardwareDiagnosticsWindows | Remove-AppxPackage
-Get-AppxPackage -AllUsers AD2F1837.HPPrinterControl | Remove-AppxPackage
-Get-AppxPackage -AllUsers AD2F1837.HPPrivacySettings | Remove-AppxPackage
-Get-AppxPackage -AllUsers AD2F1837.HPSystemEventUtility | Remove-AppxPackage
-Get-AppxPackage -AllUsers AD2F1837.HPThermalControl | Remove-AppxPackage
 Get-AppxPackage -AllUsers AD2F1837.myHP | Remove-AppxPackage
 Get-AppxPackage -AllUsers AD2F1837.OMENCommandCenter | Remove-AppxPackage
 Get-AppxPackage -AllUsers C27EB4BA.DropboxOEM | Remove-AppxPackage
