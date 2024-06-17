@@ -6,7 +6,16 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## Enable Hyper-V
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
+## Disable XPS Printer
+Disable-WindowsOptionalFeature -FeatureName “Printing-XPSServices-Features” -Online -NoRestart
+
+## Disable Print to PDF Printer as I use Google Docs
+Disable-WindowsOptionalFeature -FeatureName "Printing-PrintToPDFServices-Features" -Online -NoRestart
+
 ## Disable Hibernation
 powercfg.exe /hibernate off
+
+## Write all the Windows features to the console
+Get-WindowsOptionalFeature -Online
 
 Write-Host "It is recommended you restart your machine as this script enabled Windows features that typically require a restart."

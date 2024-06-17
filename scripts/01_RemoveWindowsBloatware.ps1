@@ -32,6 +32,8 @@ Get-AppxPackage -AllUsers Microsoft.MicrosoftJournal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.WindowsAlarms | Remove-AppxPackage
 Get-AppxPackage -AllUsers Microsoft.MicrosoftOfficeHub | Remove-AppxPackage
+Get-AppxPackage -AllUsers Microsoft.Ink.Handwriting.en-US.1.0 | Remove-AppxPackage
+Get-AppxPackage -AllUsers Microsoft.Ink.Handwriting.Main.en-US.1.0.1 | Remove-AppxPackage
 
 ## Remove all the Dell bloatware
 Get-AppxPackage -AllUsers | Where-Object Name -like "Dell*" | Remove-AppxPackage
