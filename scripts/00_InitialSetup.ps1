@@ -6,4 +6,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## Enable Hyper-V
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
+## Disable Hibernation
+powercfg.exe /hibernate off
+
 Write-Host "It is recommended you restart your machine as this script enabled Windows features that typically require a restart."
